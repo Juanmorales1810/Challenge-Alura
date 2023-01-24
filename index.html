@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Logo.png" alt="Logo">
+    </header>
+    <main>
+        <form class="form">
+            <input type="text" id="paraula" required autocomplete="off">
+            <label class="lbl-nombre">
+                <span class="text-nomb">Ingrese el texto aquí</span>
+            </label>
+        </form>
+        <section class="alert">
+            <p class="p">&#9888; Solo letras minúsculas y sin acentos</p>
+        </section>
+        <form class="btn">
+            <input class="btn1" type="button" value="Encriptar" onclick="encriptarTexto()">
+            <input class="btn2" type="button" value="Desencriptar" onclick="desencriptarTexto()">
+        </form>
+        <div class="box">
+            <div id="notext">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="img/96916-searching.json"  background="transparent"  speed="0.5"  loop  autoplay></lottie-player>
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div id="texto" style="display: none;">
+                <h1 id="ingresetexto2" class="input-texto" ></h1>
+                <input  class="btn3" type="button" value="Copiar" onclick = "copiarTextoH1()"  id="copiar">
+        </div>
+        <script src="js/script.js"></script>
+    </main>
+</body>
+</html>

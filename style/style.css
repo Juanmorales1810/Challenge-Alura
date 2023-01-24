@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+body{
+    background: #E5E5E5;
+}
+.logo{
+    position: relative;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+.form{
+    position: absolute;
+    width: 577px;
+    height: 120px;
+    left: 240px;
+    top: 120px;
+    overflow: hidden;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #0A3871;
+    font-size: 32px;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.form .lbl-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.form .lbl-nombre:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid #0A3871;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-nomb{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #0A3871;
+}
+.form input:focus + .lbl-nombre .text-nomb,.form input:valid + .lbl-nombre .text-nomb{
+    transform: translateY(-110%);
+    font-size: 20px;
+    color: #5991d4;
+}
+.form input:focus + .lbl-nombre:after, .form input:valid + .lbl-nombre:after{
+    transform: translateX(0%);
+}
+.alert{
+    position: relative;
+    width: 229px;
+    height: 20px;
+    left: 240px;
+    top: 800px;
+}
+.p{
+    width: 205px;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+.btn{
+    position: relative;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 800px;
+}
+.btn1{
+    margin: 5px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    transition: 0.2s;
+}
+.btn1:hover{
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.07);
+    transition: 0.2s;
+}
+.btn2{
+    margin: 5px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    transition: 0.2s;
+}
+.btn2:hover{
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.07);
+    transition: 0.2s;
+}
+.box{
+    position: relative;
+    width: 400px;
+    height: 850px;
+    left: 70%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.box lottie-player {
+    /* display: none; */
+    margin: 0px 32px 32px 32px;
+}
+.box h3{
+    /* display: none; */
+    padding: 0px 32px 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+.box p{
+    /* display: none; */
+    padding: 0 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+.input-texto{
+    /* display: none; */
+    padding: 32px;
+    height: 650px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #495057;
+}
+.btn3{
+    /* display: none; */
+    margin: 24px 32px 32px 32px;
+    width: 350px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    transition: 0.2s;
+}
+.btn3{
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.07);
+    transition: 0.2s;
+}
+@media screen and (max-width: 1440px) {
+    .form{
+        position: relative;
+        margin-left: 35%;
+        transform: translateX(-50%);
+        width: auto;
+        height: 120px;
+        left: 20%;
+    }
+    .alert{
+        margin-left: 35%;
+        transform: translateX(-50%);
+        left: 15%;
+        top: 320px;
+    }
+    .btn{
+        text-align: center;
+        width: 80%;
+        left: 5%;
+        margin: 40px;
+        top: 300px;
+    }
+    .box{
+        text-align: center;
+        width: 92%;
+        height: auto;
+        left: 0px;
+        top: 500px;
+        margin: 0px 40px 40px;
+    }
+    .box lottie-player{
+        display: none;
+    }
+    .box h3{
+        margin: 20px;
+        padding: 20px;
+    }
+    .box p{
+        padding-bottom: 32px;
+    }
+    .input-texto{
+        height: 50px;
+    }
+    .btn3{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (max-width: 740px) {
+    .logo{
+        left: -10px;
+        top:40px;
+    }
+    .form{
+        font-size: 22px;
+    }
+    .form input{
+        font-size: 22px;
+        padding-top: 30px;
+    }
+    .alert{
+        margin-left: 50%;
+        left: 0;
+    }
+    .box{
+        margin: 40px;
+        left: 5%;
+        width: 80%;
+        top: 400px;
+    }
+}
