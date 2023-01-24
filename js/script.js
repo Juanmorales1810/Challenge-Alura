@@ -14,7 +14,7 @@ var texto="";
             var nuevoTexto=nuevoTexto.replace(/o/gim,"ober");
             var nuevoTexto=nuevoTexto.replace(/a/gim, "ai");
             var nuevoTexto=nuevoTexto.replace(/u/gim,"ufat");
-            document.getElementById("ingresetexto2").innerHTML=nuevoTexto;
+            document.getElementById("ingresetexto").innerHTML=nuevoTexto;
             // document.getElementById("ingresetexto3").innerHTML=nuevoTexto;
             document.getElementById("copiar").style.display="show";
             document.getElementById("copiar").style.display="inherit";
@@ -35,14 +35,14 @@ var texto="";
             var nuevoTexto=nuevoTexto.replace(/ober/gim,"o");
             var nuevoTexto=nuevoTexto.replace(/ai/gim, "a");
             var nuevoTexto=nuevoTexto.replace(/ufat/gim,"u");    
-            document.getElementById("ingresetexto2").innerHTML=nuevoTexto;
+            document.getElementById("ingresetexto").innerHTML=nuevoTexto;
             // document.getElementById("ingresetexto3").innerHTML=nuevoTexto;
             document.getElementById("copiar").style.display="show";
             document.getElementById("copiar").style.display="inherit";
         }
         }
         function copiarTextoH1() {
-        const h1 = document.getElementById("ingresetexto2");
+        const h1 = document.getElementById("ingresetexto");
         const texto = h1.innerText;
         navigator.clipboard.writeText(texto).then(function() {
             location.reload();
