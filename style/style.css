@@ -69,55 +69,36 @@ body{
 }
 .alert{
     position: relative;
-    width: 229px;
-    height: 20px;
+    width: 300px;
+    height: 30px;
     left: 240px;
     top: 750px;
 }
 .p{
-    width: 205px;
-    height: 18px;
+    width: 300px;
+    height: 25px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 150%;
     color: #495057;
     opacity: 0.8;
 }
 .btn{
+    /* background: #0A3871; */
+    text-align: center;
     position: relative;
-    width: 680px;
-    height: 67px;
-    left: 240px;
+    width: 800px;
+    height: 80px;
+    left: 170px;
     top: 750px;
 }
 .btn1{
     margin: 5px;
     width: 328px;
     height: 67px;
-    background: #0A3871;
-    border-radius: 24px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: white;
-    transition: 0.2s;
-}
-.btn1:hover{
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.07);
-    transition: 0.2s;
-}
-.btn2{
-    margin: 5px;
-    width: 328px;
-    height: 67px;
-    background: #D8DFE8;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
+    border:none;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -125,10 +106,40 @@ body{
     line-height: 19px;
     text-align: center;
     color: #0A3871;
+    border-radius: 24px;
+    background: #E5E5E5;
+    box-shadow:  -12px 12px 24px #bfbfbf,
+                            12px -12px 24px #ffffff;
+    transition: 0.2s;
+}
+.btn1:hover{
+    background: linear-gradient(225deg, #cecece, #f5f5f5);
+    box-shadow:  -9px 9px 18px #acacac,
+            9px -9px 18px #ffffff;
+    transition: 0.2s;
+}
+.btn2{
+    margin: 5px;
+    width: 328px;
+    height: 67px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    border-radius: 24px;
+    background: #E5E5E5;
+    box-shadow:  -12px 12px 24px #bfbfbf,
+                            12px -12px 24px #ffffff;
     transition: 0.2s;
 }
 .btn2:hover{
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.07);
+    background: linear-gradient(225deg, #cecece, #f5f5f5);
+    box-shadow:  -9px 9px 18px #acacac,
+            9px -9px 18px #ffffff;
     transition: 0.2s;
 }
 .box{
@@ -136,9 +147,10 @@ body{
     width: 400px;
     height: 750px;
     left: 70%;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+    background: #E5E5E5;
+    box-shadow:  -12px 12px 24px #bfbfbf,
+                            12px -12px 24px #ffffff;
 }
 .box lottie-player {
     /* display: none; */
@@ -213,7 +225,6 @@ body{
         top: 320px;
     }
     .btn{
-        text-align: center;
         width: 80%;
         left: 5%;
         margin: 40px;
@@ -260,6 +271,9 @@ body{
     .alert{
         margin-left: 50%;
         left: 0;
+    }
+    .btn1, .btn2, .btn3{
+        width: 218px;
     }
     .box{
         margin: 40px;
